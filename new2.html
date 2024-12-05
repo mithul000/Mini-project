@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1e1e1e;
+            border-bottom: 2px solid #f05454;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f05454;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f0f0f0;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f05454;
+        }
+
+        .featured-game {
+            text-align: center;
+            padding: 250px 50px;
+            background-color: #ccc;
+            background-image: url("Game\ photo.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            color: #fff;
+            
+        }
+
+        .featured-game h1 {
+            position: absolute;
+            top:440px;
+            left: 350px;
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: red;
+        }
+
+        .featured-game p {
+            position: absolute;
+            top:520px;
+            left:370px;
+            font-size: 24px;
+            color: red;
+
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .game-card {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .game-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .game-card h3 {
+            margin: 15px 0 10px;
+            font-size: 20px;
+        }
+
+        .game-card p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 16px;
+        }
+
+        .contact h2 {
+            color: #f05454;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #f05454;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> MITHUL GAMING CENTER</div>
+        <nav>
+            <ul>
+                <li><a href="#Homes">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="featured-game" id="Homes">
+        <h1>Welcome to GameZone</h1>
+        <p>Your ultimate destination for the best games!</p>
+    </section>
+    <section class="games-grid" id="games">
+
+        <div class="game-card">
+            <img src="https://rukminim2.flixcart.com/image/720/864/kk4c13k0/physical-game/g/k/6/pc-gta-vice-city-pc-game-dvd-pc-dvd-window-original-imafzja9wtrtqzfz.jpeg?q=60&crop=false" alt="Game 1">
+            <h3>GTA VICE CITY</h3>
+            <P> RS: 699 </P>
+        </div>
+
+        <div class="game-card">
+            <img src="https://cdn1.epicgames.com/spt-assets/44871318225e4d028d71aeeaa37cf89c/racerloop-q361r.png?resize=1&w=360&h=480&quality=medium" alt="">
+            <h3>RACER LOOP</h3>
+            <p> RS: 159</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://store-images.s-microsoft.com/image/apps.808.14492077886571533.be42f4bd-887b-4430-8ed0-622341b4d2b0.c8274c53-105e-478b-9f4b-41b8088210a3?q=90&w=256&h=384&mode=crop&format=jpg&background=%23FFFFFF" alt="Game 2">
+            <h3>MINECRAFT</h3>
+            <p> RS: 599</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLr2GtAyGmrMvVUEo5tlAnPdCGBheDf8B3S3ek22YQwMqEqkok7Uw5HArmzEZ3Nuz9rwA&usqp=CAU" alt="Game 3">
+            <h3>ROBLOX</h3>
+            <p> RS: 259</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/23KU5A/b4ed90f-7c704382849b23eda5c6310d.jpg/f/star-wars-outlaws.jpg" alt="Game 4">
+            <h3>STAR WARS</h3>
+            <p> RS: 150 </p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/A9M8D5/cc6d171a09e848319f8e95365b419ea3.jpg/f/gears-of-war-nordic.jpg" alt="Game 3">
+            <h3> GEARS OF WAR</h3>
+            <p> RS: 489</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/software/switch/70010000076253/desc/9f20d3bb85adcd07b9045d869b6b2ba477eeab506ae0ddb01e9add3b2b05244f" alt="Game 3">
+            <h3>ZOMBIE WOOD</h3>
+            <p>RS: 299</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://store-images.s-microsoft.com/image/apps.61483.70702278257994163.1152c6f1-f586-40eb-a61e-0f8bad1ee621.dac35347-06f6-4003-88b5-931747a876cf?q=90&w=256&h=384&mode=crop&format=jpg&background=%230078D7" alt="Game 3">
+            <h3> FORTNITE</h3>
+            <p>RS: 899</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://whyd.com/wp-content/uploads/2021/12/PUBG-Will-be-Free-To-Play-Starting-in-January.jpg" alt="Game 3">
+            <h3> PUBG</h3>
+            <p>RS: 599</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmfYXj5cz60E_GXUp4dD9MFLYzgKhJnzUGF_ZR7jwHPRPMtODYO6BmPxio35lWfe9vm-A&usqp=CAU" alt="Game 3">
+            <h3>RATCHET & CLANK FUTURE</h3>
+            <p>RS: 159</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://store.my.games/hotbox/showcase/pocket/play-main/35fcc34a-4159-4d90-9096-572fc9de09a2.webp" alt="Game 3">
+            <h3> HAWKED</h3>
+            <p>RS :229</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co8pf1.webp" alt="Game 3">
+            <h3> KING MEAT</h3>
+            <p>RS 389</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://cdn11.bigcommerce.com/s-6rs11v9w2d/images/stencil/270x360/products/2893/15902/STAR_OCEAN_SEA__03965.1698877486.png?c=1" alt="Game 3">
+            <h3> STAR OCEAN</h3>
+            <p>RS: 499</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://store.my.games/hotbox/showcase/pocket/play-main/852fce61-7927-4406-a0c8-1fc952501c22.png" alt="Game 3">
+            <h3> LEFT TO SURVIVE</h3>
+            <p> RS : 569</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://gamegator.net/_next/image?url=https%3A%2F%2Fimages.gamegator.net%2FRnGcqHtYyfKYkpyGzrn-DQ%2Fco76s5%2Ffit%3Dcover%252Cw%253D260&w=640&q=75" alt="Game 3">
+            <h3> SHARPNEL</h3>
+            <p> RS: 689</p>
+        </div>
+
+    </section>
+    <footer>
+        <div class="contact" id="contacts">
+            <h2>Contact Us To Get Your Own Game</h2>
+            <p><strong>Email:</strong> MITHUL@gamezone.com</p>
+            <p><strong>Phone:</strong> 91+ 0000 0000 00</p>
+            <p><strong>Address:</strong> 123 Game Lane, Gamer City, GC 45678</p>
+            <div class="social-links">
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">Discord</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
